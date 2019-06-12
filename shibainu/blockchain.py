@@ -8,7 +8,7 @@ class Block:
         self._data = data
         self._previous_hash = previous_hash
         
-        string = "{timestamp}{data}{previous_hash}".format(
+        string = "{index}{timestamp}{data}{previous_hash}".format(
                 index=self._index,
                 timestamp=self._timestamp,
                 data=self._data,
